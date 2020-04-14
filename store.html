@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="fr" ng-app="mamie">
+
+<head>
+
+<title>MAMIE | developement</title>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Sublime project">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="./img/logo.png">
+
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+
+    <link rel="stylesheet" href="styles/ionicons.min.css">
+
+    
+    <link rel="stylesheet" href="styles/flaticon.css">
+    <link rel="stylesheet" href="styles/icomoon.css">
+    <link rel="stylesheet" href="styles/store.css">
+
+</head>
+
+<body ng-controller="StroreCtrl">
+
+
+
+<div class="super_container">
+
+
+
+	<!-- Header -->
+
+
+
+	<header class="header">
+		<div class="header_container" style="z-index: 10">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo"><a href="./index.html"><img src="./img/logo.png" alt="" class="py-2"></a></div>
+							<nav class="main_nav">
+								<ul>
+									<li><a href="index.html">Accueil</a></li>
+									<li class="active"><a href="store.html">Produits</a></li>
+									<li><a href="recettes.html">Recettes</a></li>
+									<li><a href="./about.html">A propos</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="header_extra ml-auto">
+								<div class="shopping_cart">
+									<a href="cart.html">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
+											<g>
+												<path d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3
+													c-7,0-12.8,5.3-13.4,12.3l-28,315.3c0,0.4-0.1,0.8-0.1,1.2c0,35.9,32.9,65.1,73.4,65.1h244.6c40.5,0,73.4-29.2,73.4-65.1
+													C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8,462
+													H122.2c-25.4,0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h139.3v41
+													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
+											</g>
+										</svg>
+										<div>Mon Panier <span>(0)</span></div>
+									</a>
+								</div>
+								<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Social -->
+		<div class="header_social">
+			<ul>
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+
+
+	<!-- Menu -->
+
+
+
+	<div class="menu menu_mm trans_300">
+		<div class="menu_container menu_mm">
+			<div class="page_menu_content">
+				<ul class="page_menu_nav menu_mm">
+					<li class="page_menu_item menu_mm"><a href="index.html">Accueil</a></li>
+					<li class="page_menu_item menu_mm"><a href="categories.html">Produits</a></li>
+					<li class="page_menu_item menu_mm"><a href="recettes.html">Recettes<i class="fa fa-angle-down"></i></a></li>
+					<li class="page_menu_item menu_mm"><a href="./about.html">A propos<i class="fa fa-angle-down"></i></a></li>
+					<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+		<div class="menu_social">
+			<ul>
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+
+	<!-- Home -->
+
+
+
+	<div class="home">
+
+		<div class="home_container">
+
+			<div class="home_background" style="background-image:url(img/cart.png)">
+				<div style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+			</div>
+
+			<div class="home_content_container">
+
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col">
+
+							<div class="home_content">
+
+								<div class="breadcrumbs">
+
+									<ul>
+
+										<li><a href="index.html"  style="font-size: 25px">Accueil</a></li>
+
+										<li style="font-size: 25px">Boutique</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<!-- Contact -->
+
+	
+
+	<div class="contact">
+
+		<div class="container">
+
+		    <section class="ftco-section contact">
+		    	<div class="container">
+		    		<div class="row justify-content-center">
+		    			<div class="col-md-10 text-center">
+		    				<h1>Nos produits</h1>
+		    			</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-md-6 col-lg-3" ng-repeat="product in products | startFrom:currentPage*pageSize | limitTo:pageSize">
+		    				<div class="product">
+		    					<a href="#" class="img-prod"><img class="img-fluid" ng-src="{{product.picture}}" alt="Colorlib Template">
+		    						<span class="status">30%</span>
+		    						<div class="overlay"></div>
+		    					</a>
+		    					<div class="text py-3 pb-4 px-3 text-center">
+		    						<h3><a href="#">{{product.name}}</a></h3>
+		    						<div class="d-flex">
+		    							<div class="pricing">
+				    						<p class="price"><!-- <span class="mr-2 price-dc">$120.00</span> --><span class="price-sale">{{product.price}} XAF</span></p>
+				    					</div>
+			    					</div>
+			    					<div class="bottom-area d-flex px-3">
+			    						<div class="m-auto d-flex">
+			    							<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+			    								<span><i class="ion-ios-menu"></i></span>
+			    							</a>
+			    							<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+			    								<span><i class="ion-ios-cart"></i></span>
+			    							</a>
+			    							<a href="#" class="heart d-flex justify-content-center align-items-center ">
+			    								<span><i class="ion-ios-heart"></i></span>
+			    							</a>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="row mt-5">
+		          <div class="col text-center">
+		            <div class="block-27">
+		              <ul>
+		                <li><a href="#" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" >&lt;</a></li>
+				        <li ng-repeat="x in [].constructor(numberOfPages()) track by $index" class=" {{($index === currentPage)?'active':''}}">
+							<a href="#" ng-click="currentPage = $index">{{ $index+1 }}</a>
+						</li>
+
+		                <li><a href="#" ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">&gt;</a></li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+		    	</div>
+		    </section>
+
+
+		</div>
+
+	</div>
+
+
+
+	<!-- Footer -->
+
+	
+
+	<div class="footer_overlay"></div>
+
+	<footer class="footer">
+		<div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+						<div class="footer_logo"><a href="#" style="color: red;font-family: bauchause;font-size: 60px">MAMIE</a></div>
+						<div class="copyright ml-auto mr-auto" style="color: white;font-weight: bold;font-size: 20px"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright MAMIE &copy;<script>document.write(new Date().getFullYear());</script> | made by <a href="https://ket-up.com" target="_blank">Ket-up</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div class="footer_social ml-lg-auto">
+							<ul>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script src="js/jquery.waypoints.min.js"></script>
+
+<script src="js/jquery.stellar.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="js/aos.js"></script>
+
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/store.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js"></script>
+
+<script type="text/javascript" src="./js/app.js"></script>
+
+
+</body>
+
+</html>
