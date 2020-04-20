@@ -30,4 +30,6 @@ $router->group(['prefix'=>'api/v1'], function() use($router){
     $router->get('/recette/{id}', 'RecetteController@show');
     $router->put('/recette/{id}', 'RecetteController@update');
     $router->delete('/recette/{id}', 'RecetteController@destroy');
+    $router->post('/newsletter', 'NewsLetterController@store');
+
 });
