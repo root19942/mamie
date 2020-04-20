@@ -31,5 +31,6 @@ $router->group(['prefix'=>'api/v1'], function() use($router){
     $router->put('/recette/{id}', 'RecetteController@update');
     $router->delete('/recette/{id}', 'RecetteController@destroy');
     $router->post('/newsletter', 'NewsLetterController@store');
+    $router->get('/search/q={text}', 'ProductController@search');
 
 });
